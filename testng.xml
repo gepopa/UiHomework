@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="BitDefenderWeb" verbose="1">
+
+    <test name="NavigateOnSecondDeviceTabs" enabled="true">
+        <classes>
+            <class name="LoginTests"/>
+            <class name="DeviceTabsTests"/>
+        </classes>
+    </test>
+
+    <test name="CheckAtRiskDevices" enabled="true">
+        <classes>
+            <class name="LoginTests"/>
+            <class name="ActivityModalTests"/>
+            <class name="MyDevicesPageTests"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="listeners.TestLoggerSetup" />
+    </listeners>
+
+</suite>
+
